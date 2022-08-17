@@ -1,0 +1,3 @@
+.docker/.ssh/config
+.docker/.ssh/id_rsa
+.env

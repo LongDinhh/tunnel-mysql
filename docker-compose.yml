@@ -1,0 +1,12 @@
+version: "3.4"
+services:
+  myapp:
+    tty: true
+    command: ["./tunnel-mysql.sh"]
+    build:
+      context: .
+    container_name: ssh-tunnel
+    ports:
+      - 13306:13306
+    environment:
+      - HOST=HOSTHOST
